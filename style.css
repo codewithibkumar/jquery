@@ -1,24 +1,21 @@
-#box1, #sliderbox
+#headinghtml, #slidecontenthtml, #slidecontentcss,#headingcss
 {
-    width: 450px;
-    text-align: center;
-    background-color: #c3c3c3;
+    background-color:cyan;
     padding:5px;
+    text-align:center;
 }
-#sliderbox
+#slidecontenthtml, #slidecontentcss
 {
-    width: 400px;
-    padding:30px;
+    padding:50px;
     display:none;
-   /* display:none; */
 }
-#box2
+#magicbox
 {
-    width: 100px;
-    height:100px;
-    text-align: center;
     background-color: blue;
     color:white;
-   
-    position: absolute;
+    text-align:center;
+    padding:5px;
+    width: 100px;
+    height:100px;
+    position:absolute;
 }
