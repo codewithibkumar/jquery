@@ -1,38 +1,25 @@
-$(document).ready(function()
-{
-    $("#hide").click(function(){
-        //$("p").hide();
-        //$("p").fadeOut(); // to hide with effect
-        //$("p").fadeOut("slow");
+$(document).ready(function(){
+    $("#hide").click(function()
+    {
+       // $("p").fadeOut();
         $("p").fadeOut(2000);
     });
-    $("#show").click(function(){
-       // $("p").fadeIn();  //to show with effect
-       //$("p").fadeIn("slow");
-       $("p").fadeIn(2000);
-       // $("p").show();
-       // $("p").html("Hi we are learning JQuery");
-       // $("p").css({background:'blue',color:'white'});
-        //$(this).css({color:'red'});
+    $("#show").click(function()
+    {
+        //$("p").fadeIn();
+       // $("p").fadeIn(2000);
+       // $("p").fadeTo("slow", 0.15);
+       $("p").fadeToggle(); //for hide and show
+       $("#box2").animate({left:'350px'})
+      
+       
     });
-    $("#headingHtml").click(function(){
-       // $("#contentHtml").show();
-       //$("#contentHtml").toggle();
-       //$("#contentHtml").fadeToggle();
-       //$("#contentHtml").slideDown();
-       $("#contentHtml").slideToggle();
-
+    $("#box1").click(function(){
+        //$("#sliderbox").slideDown();
+        $("#sliderbox").slideToggle();
+       // $("#sliderbox").slideUp();
+      
     });
-    $("#sumbtn").click(function(){
-        var num1 = parseInt($("#tnum1").val());
-        var num2 = parseInt($("#tnum2").val());
-        var result = num1 + num2;
-        $("#output").html("Sum is: "+result);
-        //$("#output").fadeIn(2000);
-        $("#output").animate({left:'100px'});
-       // $("#output").animate({right:'100px'});
-       $(this).css({color:'red'});
-       $("#output").css({backgroundColor:'red'});
-    })
+    
 
 });

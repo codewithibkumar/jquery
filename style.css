@@ -1,23 +1,24 @@
-#headingHtml, #contentHtml
+#box1, #sliderbox
 {
-    background-color: burlywood;
+    width: 450px;
+    text-align: center;
+    background-color: #c3c3c3;
     padding:5px;
 }
-#contentHtml
+#sliderbox
 {
-    padding:50px;
+    width: 400px;
+    padding:30px;
     display:none;
-}
-#calculator
-{
-    background-color: yellow;
-    padding:20px;
-    width: 200px;
-}
-#output
-{
-    width:90px;
-    position: relative;
    /* display:none; */
-    
+}
+#box2
+{
+    width: 100px;
+    height:100px;
+    text-align: center;
+    background-color: blue;
+    color:white;
+   
+    position: absolute;
 }
